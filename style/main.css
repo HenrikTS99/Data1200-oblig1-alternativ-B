@@ -1,6 +1,40 @@
+/* temp visualizers */
+.container {
+  padding: 1.5rem;
+  margin: 2rem;
+}
 
-.color-container {
-    padding:20px;
-    margin:20px;
-    background-color:aqua;
+.aqua {
+  background-color: aqua;
+}
+.beige {
+  background-color: beige;
+}
+
+/* navbar css */
+.navbar-list {
+  list-style-type: none;
+}
+
+.navbar-list li {
+  display: inline-block;
+  margin: 0 1rem 0 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.side-bar {
+  display: inline-block;
+}
+
+.content {
+  display: flex;
+  gap: 1rem;
+}
+
+/* makes section take most of the space compared to aside */
+section {
+  flex: 3;
 }
