@@ -1,0 +1,20 @@
+body{
+    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmxmNXZnMmQwdnNyems5cXB5YWo2cDVtcDMyMW9saW5uNHVudTdvbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SggILpMXO7Xt6/giphy.gif);
+    background-size: cover;
+}
+
+.bilder {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+}
+
+figcaption{
+    font-size: 40px;
+}
+
