@@ -38,3 +38,21 @@
 section {
   flex: 3;
 }
+
+/* HenrikL css under */
+
+.HenrikLBody {background-image: url("../media/applelogo.png");
+background-size: cover;}
+
+.iphone17 {width: 300px;}
+
+.iphone17pro {width: 300px;}
+
+.applewatch {width: 150px;}
+
+.color-container ul {
+  list-style: none;
+  display: flex;      
+  gap: 20px;  
+  justify-content: center;        
+}
