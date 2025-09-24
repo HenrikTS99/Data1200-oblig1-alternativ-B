@@ -39,6 +39,13 @@ section {
   flex: 3;
 }
 
+.color-container ul {
+  list-style: none;
+  display: flex;      
+  gap: 20px;  
+  justify-content: center;        
+}
+
 /* HenrikL css under */
 
 .HenrikLBody {background-image: url("../media/applelogo.png");
@@ -50,9 +57,4 @@ background-size: cover;}
 
 .applewatch {width: 150px;}
 
-.color-container ul {
-  list-style: none;
-  display: flex;      
-  gap: 20px;  
-  justify-content: center;        
-}
+
