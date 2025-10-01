@@ -11,6 +11,20 @@
   background-color: beige;
 }
 
+/* dark mode */
+.dark-mode {
+  background-color: #1F1B24;
+  color: #FFFFFF;
+}
+
+.darkmode-container {
+  background-color: #404040;
+}
+
+.darkmode-text {
+  color: #FFFFFF;
+}
+
 /* navbar css */
 .navbar-list {
   list-style-type: none;
@@ -25,9 +39,7 @@
   text-align: center;
 }
 
-.side-bar {
-  display: inline-block;
-}
+
 
 .content {
   display: flex;
@@ -36,7 +48,12 @@
 
 /* makes section take most of the space compared to aside */
 section {
-  flex: 3;
+  width: 75%;
+  float: left;
+}
+
+.side-bar {
+  float: right;
 }
 
 .color-container ul {
@@ -57,4 +74,34 @@ background-size: cover;}
 
 .applewatch {width: 150px;}
 
+/* HenrikTS css */
 
+#main-henrikTS {
+}
+
+.image-slider {
+  width: 40%;
+  height: 70vh;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; /* hide elements spilling outside boundary */
+  position: relative;
+
+}
+
+.image-slider img {
+  position: absolute;
+  animation: image-slider 9s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes image-slider {
+  25%{opacity:1}
+  40%{opacity:0}
+}
+
+.image-slider img:nth-child(1){animation-delay:0s;}
+.image-slider img:nth-child(2){animation-delay:3s;}
+.image-slider img:nth-child(3){animation-delay:6s;}
