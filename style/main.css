@@ -18,6 +18,7 @@
 .dark-mode {
   background-color: #1F1B24;
   color: #FFFFFF;
+  margin: 0;
 }
 
 .darkmode-container {
@@ -47,24 +48,39 @@
 /* footer css */
 
 footer {
-  background-color: aqua;
+  background-color: #0d1117;
   padding: 1rem;
+  margin-top: 2rem;
+  border-top:0.15rem solid #2b3642;
+  box-sizing:border-box;
 }
 
 footer ul {
   list-style-type: none;
   display: flex;
-  align-items: center;
   justify-content: center;
+  gap:2rem;
 }
 
-footer ul li {
-  display: inline-block;
-  margin: 0 1rem 0 1rem;
-  background-color:aquamarine;
-  padding: 1rem;
-  border-radius: 0.5rem;
+footer ul li a {
+  color: #c9d1d9;
+  background-color: #21262d;
+  text-decoration: none;
+  border-radius: 3rem;
+  padding: 0.5rem;
+  display:flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-right: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
 }
+
+footer ul li a:hover {
+  color: #fcfcfc;
+  background-color: #3a3a3a;
+  box-shadow: 0 0 10px 2px rgba(200, 200, 200, 0.8); /* offset x, y, blur-radius, spread-radius, color */
+}
+
 .icon {
   height: 2rem;
   width: 2rem;
@@ -104,9 +120,6 @@ background-size: cover;}
 .applewatch {width: 150px;}
 
 /* HenrikTS css */
-
-#main-henrikTS {
-}
 
 .image-slider {
   width: 40%;
