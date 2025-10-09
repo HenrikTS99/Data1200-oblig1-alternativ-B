@@ -1,30 +1,19 @@
-/* temp visualizers */
-.container {
-  padding: 1.5rem;
-  margin: 2rem;
-}
-
-.aqua {
-  background-color: aqua;
-}
-.grey {
-  background-color: grey;
-}
-.beige {
-  background-color: beige;
-}
-
 /* dark mode */
 .dark-mode {
   background-color: #1F1B24;
   color: #FFFFFF;
   margin: 0;
+  /* for sticky footer */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .darkmode-container {
   background-color: #404040;
   border:1px solid rgb(173, 173, 173);
-  padding:5px;
+  padding:1.5rem;
+  margin: 2rem;
 }
 
 .darkmode-text {
@@ -32,13 +21,37 @@
 }
 
 /* navbar css */
-.navbar-list {
+
+nav {
+  background-color: #0d1117;
+  border-bottom:0.15rem solid #2b3642;
+}
+nav ul {
   list-style-type: none;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
 }
 
-.navbar-list li {
-  display: inline-block;
-  margin: 0 1rem 0 1rem;
+nav ul li a {
+  color: #c9d1d9;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: block;
+  text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #3a3a3a;
+  color: #fcfcfc;
+  box-shadow: 0 2px 0 0 rgba(230, 230, 230, 0.9);
+}
+
+nav a.active {
+  color: #fcfcfc;
+  background-color: #313131;
+  box-shadow: 0 2px 0 0 rgba(200, 200, 200, 0.8);
 }
 
 .center {
@@ -50,7 +63,7 @@
 footer {
   background-color: #0d1117;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: auto; /* place bottom of page if page too long */
   border-top:0.15rem solid #2b3642;
   box-sizing:border-box;
 }
@@ -86,12 +99,17 @@ footer ul li a:hover {
   width: 2rem;
 }
 
+/* main */ 
+.container {
+  padding: 1.5rem;
+  margin: 2rem;
+}
+/* makes section take most of the space compared to aside */
 .content {
   display: flex;
   gap: 1rem;
 }
 
-/* makes section take most of the space compared to aside */
 section {
   width: 75%;
   float: left;
