@@ -105,3 +105,53 @@ background-size: cover;}
 .image-slider img:nth-child(1){animation-delay:0s;}
 .image-slider img:nth-child(2){animation-delay:3s;}
 .image-slider img:nth-child(3){animation-delay:6s;}
+
+/* ChristianBA css */
+/* rave mode */
+.rave-mode {
+  background-color: #5e2e9a;
+  color: #e40606;
+
+animation-name: rave-colors; /* Name of keyframes-set */ 
+animation-duration: 30s; /* Varigheten av én syklus */ 
+animation-timing-function: linear; /* Animasjonshastigheten (konstant) */ 
+animation-iteration-count: infinite; /* Gjenta i det uendelige */ 
+animation-direction: alternate; /* Valgfritt: Få fargene til å "pulse" frem og tilbake */
+}
+/* 2. Definer keyframes */
+@keyframes rave-colors {
+  0% {
+    background-color: #ff0000; /* Red */
+    color: #00ff00; /* Grean */
+  }
+  25% {
+    background-color: #00ff00; /* Grean */
+    color: #0000ff; /* Blue */
+  }
+  50% {
+    background-color: #0000ff; /* Blue */
+    color: #ffff00; /* Yellow */
+  }
+  75% {
+    background-color: #ffff00; /* Yellow */
+    color: #ff00ff; /* Magenta */
+  }
+  100% {
+    background-color: #ff00ff; /* Magenta */
+    color: #ff0000; /* Red */
+  }
+}
+
+.disco-container {
+  width: 40%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; /* hide elements spilling outside boundary */
+  position: relative;
+}
+.disco-container img {
+  position: absolute;
+  width: 100%;
+  height: top;
+}
