@@ -169,11 +169,12 @@ background-size: cover;}
 /* ChristianBA css */
 /* rave mode */
 .rave-mode {
-  background-color: #5e2e9a;
-  color: #e40606;
+  background-color: #1F1B24;
+  color: #FFFFFF;
+  margin: 0;
 
 animation-name: rave-colors; /* Name of keyframes-set */ 
-animation-duration: 1s; /* Varigheten av én syklus */ 
+animation-duration: 60s; /* Varigheten av én syklus */ 
 animation-timing-function: linear; /* Animasjonshastigheten (konstant) */ 
 animation-iteration-count: infinite; /* Gjenta i det uendelige */ 
 animation-direction: alternate; /* Valgfritt: Få fargene til å "pulse" frem og tilbake */
@@ -181,24 +182,24 @@ animation-direction: alternate; /* Valgfritt: Få fargene til å "pulse" frem og
 /* 2. Definer keyframes */
 @keyframes rave-colors {
   0% {
-    background-color: #ff0000; /* Red */
-    color: #00ff00; /* Grean */
+    background-color: #1F1B24; /* Red */
+    color: #FFFFFF; /* Grean */
   }
   25% {
-    background-color: #00ff00; /* Grean */
-    color: #0000ff; /* Blue */
+    background-color: #FFFFFF; /* Grean */
+    color: #1F1B24; /* Blue */
   }
   50% {
-    background-color: #0000ff; /* Blue */
-    color: #ffff00; /* Yellow */
+    background-color: #1F1B24; /* Blue */
+    color: #FFFFFF; /* Yellow */
   }
   75% {
-    background-color: #ffff00; /* Yellow */
-    color: #ff00ff; /* Magenta */
+    background-color: #FFFFFF; /* Yellow */
+    color: #1F1B24; /* Magenta */
   }
   100% {
-    background-color: #ff00ff; /* Magenta */
-    color: #ff0000; /* Red */
+    background-color: #1F1B24; /* Magenta */
+    color: #FFFFFF; /* Red */
   }
 }
 
