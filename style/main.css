@@ -173,7 +173,7 @@ background-size: cover;}
   color: #e40606;
 
 animation-name: rave-colors; /* Name of keyframes-set */ 
-animation-duration: 30s; /* Varigheten av én syklus */ 
+animation-duration: 1s; /* Varigheten av én syklus */ 
 animation-timing-function: linear; /* Animasjonshastigheten (konstant) */ 
 animation-iteration-count: infinite; /* Gjenta i det uendelige */ 
 animation-direction: alternate; /* Valgfritt: Få fargene til å "pulse" frem og tilbake */
