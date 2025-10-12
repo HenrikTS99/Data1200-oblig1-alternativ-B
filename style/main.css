@@ -140,31 +140,49 @@ background-size: cover;}
 /* HenrikTS css */
 
 .image-slider {
-  width: 40%;
-  height: 70vh;
-  margin-left: auto;
-  margin-right: auto;
+  width: 70%;
+  max-width: 600px;
+  aspect-ratio: 16 / 16;
+  margin: 0 auto 2rem;
   overflow: hidden; /* hide elements spilling outside boundary */
   position: relative;
 
 }
 
 .image-slider img {
+  border-radius: 1rem;
+  border: #c9d1d9 solid 3px;
+  box-sizing: border-box; /* includes border in total size */
   position: absolute;
-  animation: image-slider 9s infinite;
+  animation: image-slider 30s infinite;
   opacity: 0;
   width: 100%;
   height: auto;
 }
 
 @keyframes image-slider {
-  25%{opacity:1}
-  40%{opacity:0}
+  0%, 1%{opacity:0}
+  6%{opacity:1}
+  10%{opacity:0}
+  100%{opacity:0}
+
 }
 
 .image-slider img:nth-child(1){animation-delay:0s;}
-.image-slider img:nth-child(2){animation-delay:3s;}
-.image-slider img:nth-child(3){animation-delay:6s;}
+.image-slider img:nth-child(2){animation-delay:2s;}
+.image-slider img:nth-child(3){animation-delay:4s;}
+.image-slider img:nth-child(4){animation-delay:6s;}
+.image-slider img:nth-child(5){animation-delay:8s;}
+.image-slider img:nth-child(6){animation-delay:10s;}
+.image-slider img:nth-child(7){animation-delay:12s;}
+.image-slider img:nth-child(8){animation-delay:14s;}
+.image-slider img:nth-child(9){animation-delay:16s;}
+.image-slider img:nth-child(10){animation-delay:18s;}
+.image-slider img:nth-child(11){animation-delay:20s;}
+.image-slider img:nth-child(12){animation-delay:22s;}
+.image-slider img:nth-child(13){animation-delay:24s;}
+.image-slider img:nth-child(14){animation-delay:26s;}
+.image-slider img:nth-child(15){animation-delay:28s;}
 
 /* Torrin CSS*/
 .gallery_pic{
