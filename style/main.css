@@ -184,30 +184,53 @@ background-size: cover;}
 .image-slider img:nth-child(14){animation-delay:26s;}
 .image-slider img:nth-child(15){animation-delay:28s;}
 
-/* Torrin CSS*/
-.gallery_pic{
-    height:175px;
-    width:100%;
-    object-fit:cover;
+/* ChristianBA css */
+/* rave mode */
+.rave-mode {
+  background-color: #1F1B24;
+  color: #FFFFFF;
+  margin: 0;
+
+animation-name: rave-colors; /* Name of keyframes-set */ 
+animation-duration: 60s; /* Varigheten av én syklus */ 
+animation-timing-function: linear; /* Animasjonshastigheten (konstant) */ 
+animation-iteration-count: infinite; /* Gjenta i det uendelige */ 
+animation-direction: alternate; /* Valgfritt: Få fargene til å "pulse" frem og tilbake */
 }
-.gallery_border{
-    border:1px solid rgb(81, 81, 81);
-    display:inline-flex;
-    justify-content: center;
-    gap: 10px;
-    padding:10px;
-    margin-bottom:10px;
-    background-color: rgb(81, 81, 81);
+/* 2. Definer keyframes */
+@keyframes rave-colors {
+  0% {
+    background-color: #1F1B24; /* Red */
+    color: #FFFFFF; /* Grean */
+  }
+  25% {
+    background-color: #FFFFFF; /* Grean */
+    color: #1F1B24; /* Blue */
+  }
+  50% {
+    background-color: #1F1B24; /* Blue */
+    color: #FFFFFF; /* Yellow */
+  }
+  75% {
+    background-color: #FFFFFF; /* Yellow */
+    color: #1F1B24; /* Magenta */
+  }
+  100% {
+    background-color: #1F1B24; /* Magenta */
+    color: #FFFFFF; /* Red */
+  }
 }
-.text{
-    border:1px solid black;
-    padding:10px;
-    margin:10px;
-    background-color: aliceblue;
+
+.disco-container {
+  width: 40%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; /* hide elements spilling outside boundary */
+  position: relative;
 }
-.button{
-    border:1px solid black;
-    border-radius: 5px;
-    padding:5px;
-    background-color:#caf0f0;
+.disco-container img {
+  position: absolute;
+  width: 100%;
+  height: top;
 }
