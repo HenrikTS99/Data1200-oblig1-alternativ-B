@@ -234,3 +234,31 @@ animation-direction: alternate; /* Valgfritt: Få fargene til å "pulse" frem og
   width: 100%;
   height: top;
 }
+
+/* Torrin CSS*/
+.gallery_pic{
+    height:175px;
+    width:100%;
+    object-fit:cover;
+}
+.gallery_border{
+    border:1px solid rgb(81, 81, 81);
+    display:inline-flex;
+    justify-content: center;
+    gap: 10px;
+    padding:10px;
+    margin-bottom:10px;
+    background-color: rgb(81, 81, 81);
+}
+.text{
+    border:1px solid black;
+    padding:10px;
+    margin:10px;
+    background-color: aliceblue;
+}
+.button{
+    border:1px solid black;
+    border-radius: 5px;
+    padding:5px;
+    background-color:#caf0f0;
+}
