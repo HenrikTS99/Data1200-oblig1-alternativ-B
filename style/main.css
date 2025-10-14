@@ -1,4 +1,10 @@
-/* dark mode */
+* {
+  font-family: "Consolas"; /* endre hvis ønskelig! */
+  line-height: 1.4;
+
+}
+
+  /* dark mode */
 .dark-mode {
   background-color: #1F1B24;
   color: #FFFFFF;
@@ -11,7 +17,8 @@
 
 .darkmode-container {
   background-color: #404040;
-  border:1px solid rgb(173, 173, 173);
+  border:2px solid rgb(173, 173, 173);
+  border-radius: 0.5rem;
   padding:1.5rem;
   margin: 2rem;
 }
@@ -221,6 +228,7 @@ background-position: center;
   opacity: 0;
   width: 100%;
   height: auto;
+  max-height: 600px;
 }
 
 @keyframes image-slider {
