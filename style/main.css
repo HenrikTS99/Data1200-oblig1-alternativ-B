@@ -126,16 +126,79 @@ section {
   justify-content: center;        
 }
 
-/* HenrikL css under */
+/* HenrikL css */
 
 .HenrikLBody {background-image: url("../media/applelogo.png");
-background-size: cover;}
+background-size: cover;
+background-position: center;
 
-.iphone17 {width: 300px;}
+}
+.picture-cycle {
+  width: 70%;
+  max-width: 600px;
+  aspect-ratio: 16 / 16;
+  margin: 0 auto 2rem;
+  overflow: hidden; /* hide elements spilling outside boundary */
+  position: relative;
 
-.iphone17pro {width: 300px;}
+}
 
-.applewatch {width: 150px;}
+.picture-cycle img {
+  border-radius: 1rem;
+  border: #c9d1d9 solid 3px;
+  box-sizing: border-box; /* includes border in total size */
+  position: absolute;
+  animation: picture-cycle 20s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes picture-cycle {
+  0%, 8% { opacity: 0; }
+  10%, 30% { opacity: 1; }
+  32%, 100% { opacity: 0; }
+}
+
+.picture-cycle img:nth-child(1){animation-delay:0s;}
+.picture-cycle img:nth-child(2){animation-delay:10s;}
+.picture-cycle img:nth-child(3){animation-delay:20s;}
+
+.HenrikLFooter {
+  width: 133.5%;
+  background-color: #0d1117;
+  padding: 1rem;
+  margin-top: auto; /* place bottom of page if page too long */
+  border-top:0.15rem solid #2b3642;
+  box-sizing:border-box;
+}
+
+.HenrikLFooter ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap:2rem;
+}
+
+.HenrikLFooter ul li a {
+  color: #c9d1d9;
+  background-color: #21262d;
+  text-decoration: none;
+  border-radius: 3rem;
+  padding: 0.5rem;
+  display:flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-right: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.HenrikLFooter ul li a:hover {
+  color: #fcfcfc;
+  background-color: #3a3a3a;
+  box-shadow: 0 0 10px 2px rgba(200, 200, 200, 0.8); /* offset x, y, blur-radius, spread-radius, color */
+}
+
 
 /* HenrikTS css */
 
