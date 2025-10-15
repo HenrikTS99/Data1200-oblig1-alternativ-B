@@ -315,49 +315,71 @@ hr {
   background-color: #1F1B24;
   color: #FFFFFF;
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
-animation-name: rave-colors; /* Name of keyframes-set */ 
-animation-duration: 60s; /* Varigheten av én syklus */ 
-animation-timing-function: linear; /* Animasjonshastigheten (konstant) */ 
-animation-iteration-count: infinite; /* Gjenta i det uendelige */ 
-animation-direction: alternate; /* Valgfritt: Få fargene til å "pulse" frem og tilbake */
+  animation-name: rave-colors; /* Name of keyframes-set */ 
+  animation-duration: 100s; /* Time of syklus */ 
+  animation-timing-function: linear; 
+  animation-iteration-count: infinite;  
+  animation-direction: alternate;
 }
-/* 2. Definer keyframes */
+
 @keyframes rave-colors {
   0% {
-    background-color: #1F1B24; /* Red */
-    color: #FFFFFF; /* Grean */
+    background-color: #1F1B24; 
+    color: #FFFFFF;
   }
   25% {
-    background-color: #FFFFFF; /* Grean */
-    color: #1F1B24; /* Blue */
+    background-color: #FFFFFF; 
+    color: #1F1B24; 
   }
   50% {
-    background-color: #1F1B24; /* Blue */
-    color: #FFFFFF; /* Yellow */
+    background-color: #1F1B24; 
+    color: #FFFFFF; 
   }
   75% {
-    background-color: #FFFFFF; /* Yellow */
-    color: #1F1B24; /* Magenta */
+    background-color: #FFFFFF; 
+    color: #1F1B24; 
   }
   100% {
-    background-color: #1F1B24; /* Magenta */
-    color: #FFFFFF; /* Red */
+    background-color: #1F1B24;
+    color: #FFFFFF;
   }
 }
 
-.disco-container {
-  width: 40%;
-  height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden; /* hide elements spilling outside boundary */
-  position: relative;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1.25fr 1.2fr;
+  place-items: center;
+  margin-bottom: 2.0rem;
 }
-.disco-container img {
-  position: absolute;
+
+.songtext-container {
+  background-color: #1F1B24;
+  border:3px solid #FFFFFF;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  min-width: 50%;
   width: 100%;
-  height: top;
+  margin-left: 5rem;
+}
+
+.asidedance-container {
+  min-width: 100%;
+}
+
+.asidedance-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.grid-container img {
+  max-width: 300px;
+  margin: auto;
+ height: 100%;
 }
 
 /* Torrin CSS*/
