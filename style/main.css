@@ -140,10 +140,16 @@ section {
 /* HenrikL css */
 
 .HenrikLBody {background-image: url("../media/applelogo.png");
-background-size: cover;
-background-position: center;
-
+  background-size: cover;
+  background-position: center;
+  margin: 0px;
+  /* for sticky footer */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+
 .picture-cycle {
   width: 70%;
   max-width: 600px;
@@ -174,42 +180,6 @@ background-position: center;
 .picture-cycle img:nth-child(1){animation-delay:0s;}
 .picture-cycle img:nth-child(2){animation-delay:10s;}
 .picture-cycle img:nth-child(3){animation-delay:20s;}
-
-.HenrikLFooter {
-  width: 133.5%;
-  background-color: #0d1117;
-  padding: 1rem;
-  margin-top: auto; /* place bottom of page if page too long */
-  border-top:0.15rem solid #2b3642;
-  box-sizing:border-box;
-}
-
-.HenrikLFooter ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  gap:2rem;
-}
-
-.HenrikLFooter ul li a {
-  color: #c9d1d9;
-  background-color: #21262d;
-  text-decoration: none;
-  border-radius: 3rem;
-  padding: 0.5rem;
-  display:flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding-right: 1rem;
-  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
-}
-
-.HenrikLFooter ul li a:hover {
-  color: #fcfcfc;
-  background-color: #3a3a3a;
-  box-shadow: 0 0 10px 2px rgba(200, 200, 200, 0.8); /* offset x, y, blur-radius, spread-radius, color */
-}
-
 
 /* HenrikTS css */
 
