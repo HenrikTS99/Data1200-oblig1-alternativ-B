@@ -4,7 +4,8 @@
 
 }
 
-  /* dark mode */
+/* dark mode */
+
 .dark-mode {
   background-color: #1F1B24;
   color: #FFFFFF;
@@ -21,10 +22,6 @@
   border-radius: 0.5rem;
   padding:1.5rem;
   margin: 2rem;
-}
-
-.darkmode-text {
-  color: #FFFFFF;
 }
 
 /* navbar css */
@@ -107,7 +104,8 @@ footer ul li a:hover {
   width: 2rem;
 }
 
-/* main */ 
+/* main */
+
 .container {
   padding: 0 1.5rem 1.5rem 1.5rem;
   margin: 2rem;
@@ -130,13 +128,6 @@ section {
   float: right;
 }
 
-.color-container ul {
-  list-style: none;
-  display: flex;      
-  gap: 20px;  
-  justify-content: center;        
-}
-
 /* HenrikL css */
 
 .HenrikLBody {background-image: url("../media/applelogo.png");
@@ -149,7 +140,6 @@ section {
   flex-direction: column;
 }
 
-
 .picture-cycle {
   width: 70%;
   max-width: 600px;
@@ -157,7 +147,6 @@ section {
   margin: 0 auto 2rem;
   overflow: hidden; /* hide elements spilling outside boundary */
   position: relative;
-
 }
 
 .picture-cycle img {
@@ -187,7 +176,7 @@ section {
   margin-bottom: 0.3rem;
 }
 
-hr {
+.title-underline {
   border-color: rgb(138, 138, 138);
   margin: 0 10px 1px 10px;
   width: 97%;
@@ -260,7 +249,6 @@ hr {
   6%{opacity:1}
   10%{opacity:0}
   100%{opacity:0}
-
 }
 
 .image-slider img:nth-child(1){animation-delay:0s;}
@@ -280,6 +268,7 @@ hr {
 .image-slider img:nth-child(15){animation-delay:28s;}
 
 /* ChristianBA css */
+
 /* rave mode */
 .rave-mode {
   background-color: #1F1B24;
@@ -353,6 +342,7 @@ hr {
 }
 
 /* Torrin CSS*/
+
 .gallery_pic{
     height:175px;
     width:100%;
@@ -367,20 +357,22 @@ hr {
   padding:1.0rem;
   margin:1.5rem;
   background-color: #404040;
-
 }
+
 .text{
     border:1px solid black;
     padding:10px;
     margin:10px;
     background-color: aliceblue;
 }
+
 .button{
     border:1px solid black;
     border-radius: 5px;
     padding:5px;
     background-color:#caf0f0;
 }
+
 #darkmode-link{
   width:fit-content;
   color:#FFFFFF;
