@@ -279,7 +279,7 @@ section {
   flex-direction: column;
 
   animation-name: rave-colors; /* Name of keyframes-set */ 
-  animation-duration: 30s; /* Time of syklus */ 
+  animation-duration: 1s; /* Time of syklus */ 
   animation-timing-function: linear; 
   animation-iteration-count: infinite;  
   animation-direction: alternate;
@@ -292,18 +292,18 @@ section {
   }
   25% {
     background-color: #502571; 
-    color: #6a0a0a; 
+    color: #fa0606; 
   }
   50% {
-    background-color: #1F1B24; 
-    color: #781313; 
+    background-color: #40f908; 
+    color: #f90b0b; 
   }
   75% {
-    background-color: #1d6db9; 
+    background-color: #0583fa; 
     color: #58ed13; 
   }
   100% {
-    background-color: #6c12db;
+    background-color: #7003f6;
     color: #e51c8b;
   }
 }
